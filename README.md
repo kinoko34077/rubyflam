@@ -1,9 +1,11 @@
-# japanese-ruby-parser
+# Rubyflam（ルビ振らん）
 
 小説家になろう形式と青空文庫形式のルビ表記を、単体で解析・正規化・変換・再出力することを目的とする共通ライブラリ。
 
+正式名は **Rubyflam**、日本語名は **ルビ振らん**、GitHubリポジトリ名は `rubyflam`。将来のパッケージ名は `rubyflam` を候補とする（公開・確保は未実施）。
+
 ## 現在の状態
-Repository Bootstrap直後の初期仕様。実装・完全互換性・リリースは未受入。
+Repository Bootstrap由来の初期仕様。実装・完全互換性・リリースは未受入。
 
 ## 目標
 - 小説家になろう公式のルビ挙動（明示／省略／括弧／抑制／長さ・文字種・無効入力）をテストで検証し、互換性を保証する。
@@ -22,3 +24,9 @@ Repository Bootstrap直後の初期仕様。実装・完全互換性・リリー
 - 本リポはルビ記法の解析・構造化・描画用データ変換を所有する。漢字の読み自動生成、辞書・語義解決、歴史的表記変換は対象外。
 - 本リポの仕様・ライブラリが正式受入されるまで、既存利用リポの既存コードは変更しない。
 - 公開リポジトリであることと、ライセンス選択・パッケージ公開・リリースは別の決定。第三者著作権・NOTICEを検証してから配布する。
+
+## 創設と命名の履歴
+- [devflow #1046](https://github.com/kinoko34077/devflow/issues/1046) により `japanese-ruby-parser` という仮名で公開リポを作成。
+- 2026-11-17 JSTに同一リポを **Rubyflam（ルビ振らん）** / `kinoko34077/rubyflam` に改名。コミット・Issue履歴は継承。
+- 名称確定と開発経緯・実装受入: [Rubyflam #1](https://github.com/kinoko34077/rubyflam/issues/1)。後続リポ統合: [#2](https://github.com/kinoko34077/rubyflam/issues/2)。現行 [devflow Control #1048](https://github.com/kinoko34077/devflow/issues/1048)。
+- `.github/repository-bootstrap.json` は**創設時の旧名を記録する履歴**であり、現在のリポ名は本README・GitHubリポ設定・Controlに従う。
